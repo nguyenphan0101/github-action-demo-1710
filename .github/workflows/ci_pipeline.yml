@@ -44,12 +44,12 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: deploy
-        uses: sleep 2 # docker compose down
+        uses: sleep 2
   
   deploy-new-version: 
     needs: turn-off-old-version
     runs-on: ubuntu-latest
     steps: 
       - name: deploy
-        uses: sleep 2 #docker compose up -d
+        uses: sleep 2 
         
